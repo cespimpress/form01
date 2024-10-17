@@ -1,0 +1,427 @@
+{
+  "settings": {
+    "name": "form",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a6a99c",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#191b1f",
+        "#23272b",
+        "#878e99"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.17",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "chatbutton": {},
+    "gdpr": {
+      "colorText": "#edefeb",
+      "colorLink": "#a6a99c",
+      "underlineLink": false,
+      "text": "Al continuar acepta nuestras <a  href='politicas.html'>Políticas de Privacidad</a>"
+    },
+    "favicon": "@PROJECT_PATH@/assets/images/form.ico",
+    "mbrsiteDomain": "pss9r34yze",
+    "imageResize": false,
+    "usedWebp": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "pwa-switcher": false,
+    "uniqCompNum": 3,
+    "versionPublish": "5.9.17"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Formulario",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_name": "aform1",
+          "_sourceTheme": "expertm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"form1 expertm5\" group=\"Forms\" plugins=\"formstyler, datepicker\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value=\"justify-content-start\">Left</option>\n            <option value=\"justify-content-center\" selected=\"\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Info Card\" name=\"showCard\" checked=\"\">\n        <header condition=\"showCard\">Card</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" condition=\"showCard\" checked=\"\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked=\"\" condition=\"showCard\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" condition=\"showCard\">\n        <input type=\"checkbox\" title=\"Contacts\" name=\"showContacts\" condition=\"showCard\">\n        <input type=\"checkbox\" title=\"Social\" name=\"showSocial\" condition=\"showCard\">\n        <input type=\"checkbox\" title=\"Social Title\" name=\"showSocialTitle\" checked=\"\" condition=\"showSocial &amp;&amp; showCard\">\n        <input type=\"color\" title=\"Social Color\" name=\"socialColor\" value=\"#C4CFDE\" condition=\"showSocial &amp;&amp; showCard\">\n        <input type=\"color\" title=\"Social BG Color 1\" name=\"socialBgColor1\" value=\"#1e2024\" condition=\"showSocial &amp;&amp; showCard\">\n        <input type=\"color\" title=\"Social BG Color 2\" name=\"socialBgColor2\" value=\"#23272b\" condition=\"showSocial &amp;&amp; showCard\">\n        <input type=\"checkbox\" name=\"socialShadow\" title=\"Social Shadow\" checked=\"\" condition=\"showSocial &amp;&amp; showCard\">\n        <input type=\"color\" title=\"Shadow Color 1\" name=\"socialShadow1\" value=\"#191b1f\" condition=\"socialShadow &amp;&amp; showSocial &amp;&amp; showCard\">\n        <input type=\"color\" title=\"Shadow Color 2\" name=\"socialShadow2\" value=\"#23272B\" condition=\"socialShadow &amp;&amp; showSocial &amp;&amp; showCard\">\n        <input type=\"range\" name=\"socialCount\" title=\"Social Count\" min=\"1\" max=\"6\" step=\"1\" value=\"3\" condition=\"showSocial &amp;&amp; showCard\">\n        <header condition=\"showCard\">Card Style</header>\n        <input type=\"checkbox\" title=\"Card BG\" name=\"showCardBg\" condition=\"showCard\">\n        <input type=\"color\" title=\"Card BG Color\" name=\"cardBg\" value=\"#212428\" condition=\"showCard &amp;&amp; showCardBg\">\n        <input type=\"checkbox\" name=\"cardShadow\" title=\"Card Shadow\" checked=\"\" condition=\"showCard\">\n        <input type=\"color\" title=\"Shadow Color 1\" name=\"shadowColor1\" value=\"#191b1f\" condition=\"cardShadow &amp;&amp; showCard\">\n        <input type=\"color\" title=\"Shadow Color 2\" name=\"shadowColor2\" value=\"#23272B\" condition=\"cardShadow &amp;&amp; showCard\">\n        <header>Form Style</header>\n        <input type=\"checkbox\" title=\"Form BG\" name=\"showFormBg\">\n        <input type=\"color\" title=\"Form BG Color\" name=\"formBg\" value=\"#212428\" condition=\"showFormBg\">\n        <input type=\"checkbox\" name=\"formShadow\" title=\"Form Shadow\" checked=\"\">\n        <input type=\"color\" title=\"Shadow Color 1\" name=\"formShadowColor1\" value=\"#191b1f\" condition=\"formShadow\">\n        <input type=\"color\" title=\"Shadow Color 2\" name=\"formShadowColor2\" value=\"#23272B\" condition=\"formShadow\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/expertm5/components/_images/background4.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#212428\" selected=\"\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#212428\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n        <input type=\"range\" inline=\"\" title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.2\" condition=\"bg.type!='color' &amp;&amp; overlay\">\n    <input type=\"hidden\" name=\"usedRecaptcha\" value=\"false\"></mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"(overlay &amp;&amp; bg.type=='image')\"></div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\" mbr-if=\"showMainTitle || showMainSubtitle\">\n                <div class=\"mbr-section-head\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\">\n                        CONTACT\n                    </h3>\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                        <b>Contacta Conmigo</b></h5>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-4 col-info-card\" mbr-if=\"showCard\">\n                <div class=\"item-card\">\n                    <div class=\"item-wrap\">\n                        <div class=\"card-bg\"></div>\n                        <div class=\"item-img\">\n                            <img src=\"@PROJECT_PATH@/assets/images/contacto.jpg\" alt=\"\">\n                        </div>\n                        <div class=\"card-box\" mbr-if=\"showTitle || showSubtitle || showText || showContacts || showSocial\">\n                            <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                               <b>Walter Céspedes</b></h5>\n                            <h6 class=\"card-subtitle mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".card-subtitle\">\n                                Asesor y Consultor de Negocios</h6>\n                            <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                                Pharetra sit amet aliquam id diam maecenas ultricies mi dolor sit amet.\n                            </p>\n                            <p class=\"card-contacts mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showContacts\" data-app-selector=\".card-contacts\">\n                                Phone: <a href=\"#\" class=\"text-warning\">+011 222 343 56</a>\n                                <br>\n                                Email: <a href=\"#\" class=\"text-warning\">admin@expertm5.com</a>\n                            </p>\n                            <div class=\"social-container\" mbr-if=\"showSocial\">\n                                <p class=\"social-title mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showSocialTitle\" data-app-selector=\".social-title\">\n                                    FIND WITH ME\n                                </p>\n                                <div class=\"social-list\">\n                                    <div class=\"soc-item\">\n                                        <span mbr-icon=\"\" class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                                    </div>\n                                    <div class=\"soc-item\" mbr-if=\"socialCount>1\">\n                                        <span mbr-icon=\"\" class=\"socicon-facebook socicon mbr-iconfont mbr-iconfont-social\"></span>\n                                    </div>\n                                    <div class=\"soc-item\" mbr-if=\"socialCount>2\">\n                                        <span mbr-icon=\"\" class=\"socicon-instagram socicon mbr-iconfont mbr-iconfont-social\"></span>\n                                    </div>\n                                    <div class=\"soc-item\" mbr-if=\"socialCount>3\">\n                                        <span mbr-icon=\"\" class=\"socicon-youtube socicon mbr-iconfont mbr-iconfont-social\"></span>\n                                    </div>\n                                    <div class=\"soc-item\" mbr-if=\"socialCount>4\">\n                                        <span mbr-icon=\"\" class=\"socicon-behance socicon mbr-iconfont mbr-iconfont-social\"></span>\n                                    </div>\n                                    <div class=\"soc-item\" mbr-if=\"socialCount>5\">\n                                        <span mbr-icon=\"\" class=\"socicon-vimeo socicon mbr-iconfont mbr-iconfont-social\"></span>\n                                    </div>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"col-12 col-lg-8 col-form\">\n                <div class=\"form-main-container\">\n                    <div class=\"form-wrap\">\n                        <div mbr-form=\"\" class=\"mbr-form\">\n<!--Formbuilder Form-->\n<form action=\"https://hook.eu1.make.com/usftsv1xtu17crcucbrtfemp23qo2bkk\" name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler mx-auto\">\n<div class=\"row\">\n<div hidden=\"hidden\" data-form-alert=\"\" class=\"alert alert-success col-12\">Gracias, su información fue enviada con éxito</div>\n<div hidden=\"hidden\" data-form-alert-danger=\"\" class=\"alert alert-danger col-12\"> Oops...! some problem! </div>\n</div>\n<div class=\"dragArea row\">\n<div class=\"col-lg-6 col-md-12 col-sm-12 form-group mb-3\" data-for=\"name\">\n<label mbr-text=\"\" mbr-theme-style=\"display-7\" for=\"name\" class=\"form-control-label mbr-fonts-style\">NOMBRE</label>\n<input type=\"text\" name=\"name\" data-form-field=\"name\" mbr-theme-style=\"display-7\" class=\"form-control display-7\" value=\"\">\n</div>\n<div class=\"col-lg-6 col-md-12 col-sm-12 form-group mb-3\" data-for=\"phone\">\n<label mbr-text=\"\" mbr-theme-style=\"display-7\" for=\"phone\" class=\"form-control-label mbr-fonts-style\">MÓVIL / WHATSAPP</label>\n<input type=\"text\" name=\"phone\" data-form-field=\"phone\" mbr-theme-style=\"display-7\" class=\"form-control display-7\" value=\"\">\n</div>\n<div data-for=\"email\" class=\"col-lg-12 col-md-12 col-sm-12 form-group mb-3\">\n<label mbr-text=\"\" mbr-theme-style=\"display-7\" for=\"email\" class=\"form-control-label mbr-fonts-style\">EMAIL</label>\n<input type=\"email\" name=\"email\" data-form-field=\"email\" mbr-theme-style=\"display-7\" class=\"form-control display-7\" value=\"\">\n</div>\n<div data-for=\"subject\" class=\"col-lg-12 col-md-12 col-sm-12 form-group mb-3\">\n<label mbr-text=\"\" mbr-theme-style=\"display-7\" for=\"subject\" class=\"form-control-label mbr-fonts-style\">ASUNTO</label>\n<input type=\"text\" name=\"subject\" data-form-field=\"subject\" mbr-theme-style=\"display-7\" class=\"form-control display-7\" value=\"\">\n</div>\n<div data-for=\"textarea\" class=\"col-lg-12 col-md-12 col-sm-12 form-group mb-3\">\n<label mbr-text=\"\" mbr-theme-style=\"display-7\" for=\"textarea\" class=\"form-control-label mbr-fonts-style\">MENSAJE</label>\n<textarea name=\"textarea\" data-form-field=\"textarea\" mbr-theme-style=\"display-7\" class=\"form-control display-7\"></textarea>\n</div>\n<div class=\"col-12 align-center mbr-section-btn custom-section-btn\" mbr-buttons=\"true\" mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\">\n<a data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" type=\"submit\" class=\"w-100 w-100 btn btn-warning\">ENVIAR MENSAJE</a>\n</div>\n</div>\n</form><!--Formbuilder Form-->\n</div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "overflow": "hidden",
+            ".mbr-overlay": {
+              "background-color": "@overlayColor",
+              "opacity": "@overlayOpacity"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".container": {
+              "padding-left": "10px",
+              "padding-right": "10px"
+            },
+            ".row": {
+              "margin-left": "-10px",
+              "margin-right": "-10px",
+              "flex-wrap": "wrap",
+              "align-items": "stretch",
+              "& when (@reverseContent)": {
+                "flex-direction": "row-reverse"
+              },
+              "> [class*=\"col\"]": {
+                "padding-left": "10px",
+                "padding-right": "10px"
+              }
+            },
+            ".col-info-card": {
+              "@media (max-width: 991px)": {
+                "margin-bottom": "50px"
+              }
+            },
+            ".mbr-section-head": {
+              "width": "100%",
+              "padding-bottom": "40px"
+            },
+            ".mbr-section-title": {
+              "color": "#FF014E",
+              "@media (max-width: 767px)": {
+                "text-align": "center"
+              }
+            },
+            ".mbr-section-subtitle": {
+              "color": "#a6a99c",
+              "margin-top": "15px",
+              "@media (max-width: 767px)": {
+                "margin-top": "10px",
+                "text-align": "center"
+              }
+            },
+            ".item-card": {
+              "height": "100%"
+            },
+            ".item-wrap": {
+              "position": "relative",
+              "height": "100%",
+              "width": "100%",
+              "padding": "30px",
+              "border-radius": "10px",
+              "overflow": "hidden",
+              "& when (@showCardBg)": {
+                "background": "@cardBg"
+              },
+              "& when (@cardShadow)": {
+                "box-shadow": "10px 10px 19px @shadowColor1, -10px -10px 19px @shadowColor2"
+              },
+              "@media (max-width: 767px)": {
+                "padding": "50px 20px"
+              },
+              "&:hover": {
+                ".item-img": {
+                  "img": {
+                    "transform": "scale(1.1)"
+                  }
+                }
+              }
+            },
+            ".item-img": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "width": "100%",
+              "border-radius": "10px",
+              "overflow": "hidden",
+              "img": {
+                "width": "100%",
+                "aspect-ratio": "(115 / 72)",
+                "object-fit": "cover",
+                "transition": "0.4s all"
+              }
+            },
+            ".card-box": {
+              "padding-top": "28px"
+            },
+            ".card-title": {
+              "color": "#a6a99c",
+              "margin-bottom": "9px"
+            },
+            ".card-subtitle": {
+              "color": "#a6a99c",
+              "margin-bottom": "15px"
+            },
+            ".card-text": {
+              "color": "#a6a99c",
+              "margin-bottom": "20px"
+            },
+            ".card-contacts": {
+              "color": "#a6a99c",
+              "a": {
+                "position": "relative",
+                "transition": "0.4s all",
+                "&:before": {
+                  "content": "\"\"",
+                  "position": "absolute",
+                  "bottom": "0",
+                  "left": "0",
+                  "width": "0",
+                  "height": "1px",
+                  "background-color": "@primaryColor",
+                  "transition": "0.4s all"
+                },
+                "&:hover": {
+                  "color": "@primaryColor !important",
+                  "&:before": {
+                    "width": "100%"
+                  }
+                }
+              }
+            },
+            ".social-container": {
+              "width": "100%",
+              "padding-top": "30px",
+              "@media (max-width: 991px)": {}
+            },
+            ".social-title": {
+              "color": "#a6a99c",
+              "margin-bottom": "8px"
+            },
+            ".social-list": {
+              "display": "flex",
+              "align-items": "center",
+              "flex-wrap": "wrap",
+              "margin": "-15px",
+              "margin-top": "24px"
+            },
+            ".soc-item": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "position": "relative",
+              "margin": "15px",
+              "min-width": "60px",
+              "padding": "10px",
+              "aspect-ratio": "(1 / 1)",
+              "border-radius": "6px",
+              "background": "linear-gradient(145deg, @socialBgColor1, @socialBgColor2)",
+              "& when (@socialShadow)": {
+                "box-shadow": "10px 10px 19px @socialShadow1, -10px -10px 19px @socialShadow2"
+              },
+              "transition": "0.4s all",
+              "&:before": {
+                "content": "\"\"",
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "z-index": "4",
+                "transition": "0.4s all",
+                "width": "100%",
+                "height": "100%",
+                "border-radius": "5px",
+                "background": "linear-gradient(to right bottom, #212428, #16181c)",
+                "opacity": "0"
+              },
+              ".mbr-iconfont": {
+                "position": "relative",
+                "z-index": "5",
+                "transition": "0.4s all",
+                "font-size": "22px",
+                "color": "@socialColor"
+              },
+              "&:hover": {
+                "transform": "translateY(-3px)",
+                ".mbr-iconfont": {
+                  "color": "@primaryColor"
+                },
+                "&:before": {
+                  "opacity": "1"
+                }
+              }
+            },
+            ".form-main-container": {
+              "width": "100%",
+              "height": "100%",
+              "@media (min-width: 1200px)": {
+                "& when not (@reverseContent)": {
+                  "padding-left": "20px"
+                },
+                "& when (@reverseContent)": {
+                  "padding-right": "20px"
+                }
+              }
+            },
+            ".form-wrap": {
+              "width": "100%",
+              "height": "100%",
+              "padding": "30px",
+              "border-radius": "10px",
+              "& when (@showFormBg)": {
+                "background": "@formBg"
+              },
+              "& when (@formShadow)": {
+                "box-shadow": "10px 10px 19px @formShadowColor1, -10px -10px 19px @formShadowColor2"
+              },
+              "@media (max-width: 575px)": {
+                "padding": "20px"
+              }
+            },
+            "form": {
+              "width": "100%",
+              ".dragArea.row": {
+                "justify-content": "flex-start",
+                "width": "auto !important"
+              },
+              "p": {
+                "color": "#a6a99c"
+              },
+              ".mbr-section-btn": {
+                "text-align": "center",
+                "justify-content": "center",
+                ".btn": {
+                  "width": "100%"
+                }
+              },
+              ".form-group": {
+                "margin-bottom": "20px !important"
+              },
+              ".form-control": {
+                "background-color": "#191b1e",
+                "border-radius": "6px !important",
+                "height": "55px",
+                "box-shadow": "1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset !important",
+                "border": "2px solid #191b1e !important",
+                "padding": "10px 15px",
+                "font-size": "18px",
+                "margin-bottom": "0",
+                "color": "#C4CFDE",
+                "font-weight": "400",
+                "transition": "0.4s all !important",
+                "line-height": "29px !important",
+                "&::-webkit-input-placeholder": {
+                  "color": "#a6a99c"
+                },
+                "&::-moz-placeholder": {
+                  "color": "#a6a99c"
+                },
+                "&:-moz-placeholder": {
+                  "color": "#a6a99c"
+                },
+                "&:-ms-input-placeholder": {
+                  "color": "#a6a99c"
+                }
+              },
+              "select": {
+                "color": "#a6a99c !important"
+              },
+              "textarea": {
+                "height": "216px !important",
+                "resize": "none"
+              },
+              "input, textarea": {
+                "&:active, &:focus": {
+                  "border-color": "@primaryColor !important",
+                  "box-shadow": "none !important",
+                  "color": "#a6a99c !important",
+                  "outline": "none !important",
+                  "&::-webkit-input-placeholder": {
+                    "color": "#a6a99c"
+                  },
+                  "&::-moz-placeholder": {
+                    "color": "#a6a99c"
+                  },
+                  "&:-moz-placeholder": {
+                    "color": "#a6a99c"
+                  },
+                  "&:-ms-input-placeholder": {
+                    "color": "#a6a99c"
+                  }
+                }
+              },
+              ".row": {
+                "margin-left": "-15px !important",
+                "margin-right": "-15px !important"
+              },
+              ".row [class*=col]": {
+                "padding-left": "15px !important",
+                "padding-right": "15px !important"
+              },
+              "label": {
+                "width": "100%",
+                "color": "#a6a99c",
+                "margin-bottom": "14px"
+              },
+              ".form-control-label": {
+                "width": "100%"
+              },
+              ".form-check-label": {
+                "margin-bottom": "14px"
+              },
+              ".form-check-input": {
+                "border-color": "#191b1e !important",
+                "outline": "none !important",
+                "box-shadow": "none !important",
+                "background-color": "transparent !important",
+                "&:focus, &:hover": {
+                  "border-color": "@primaryColor !important"
+                }
+              },
+              ".form-check-input:checked": {
+                "border-color": "@primaryColor !important",
+                "background-color": "#191b1e !important"
+              }
+            },
+            "LABEL": {
+              "color": "#a6a99c"
+            }
+          },
+          "_cid": "ufJX4Uqdcr",
+          "_anchor": "aform1-2",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
